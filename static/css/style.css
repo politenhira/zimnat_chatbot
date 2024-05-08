@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #fd0;
+  color: #222;
+}
+
+br {
+  font-size: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background-color: #ddd;
+  flex-direction: column;
+}
+
+.chat-box {
+  width: 300px;
+  height: 75vh;
+  background-color: #eee;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  border: 2px #2C2C2C solid;
+}
+.chat-box header {
+  background-color: #2C2C2C;
+  color: #fff;
+  display: flex;
+  padding: 0 16px;
+}
+.chat-box header > * {
+  line-height: 40px;
+}
+.chat-box header h1 {
+  margin: 0;
+  font-size: 1.1em;
+}
+.chat-box header .close-button {
+  cursor: pointer;
+  user-select: none;
+}
+.chat-box section {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100% - 40px - 40px);
+  padding: 12px;
+}
+.chat-box section div {
+  color:#fff;
+  font-size: 13px;
+  margin: 12px 0;
+}
+.chat-box section span {
+  display: inline-block;
+  padding: 6px 8px;
+  margin: 1px 0;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+.chat-box section div.not-me {
+  text-align: left;
+}
+.chat-box section div.not-me span {
+  background-color: #2C2C2C;
+  border-radius: 4px 16px 16px 4px;
+}
+.chat-box section div.not-me span:first-of-type {
+  border-top-left-radius: 16px;
+}
+.chat-box section div.not-me span:last-of-type {
+  border-bottom-left-radius: 16px;
+}
+.chat-box section div.me {
+  text-align: right;
+}
+.chat-box section div.me span {
+  background-color: #005C4B;
+  border-radius: 16px 4px 4px 16px;
+}
+.chat-box section div.me span:first-of-type {
+  border-top-right-radius: 16px;
+}
+.chat-box section div.me span:last-of-type {
+  border-bottom-right-radius: 16px;
+}
+.chat-box footer input {
+  font-family: "Karla", sans-serif;
+  outline: 0;
+  padding: 0 12px;
+  height: 40px;
+  width: 100%;
+  font-size: 1em;
+}
+.dev-label{
+  margin-top: 5px;
+  font-size: 9px;
+}
+.bg-secondary-soft {
+  background-color: rgba(100, 116, 139, 0.1);
+  color: #64748b;
+}
+.badge {
+  border-radius: 10px;
+  color: #005c4b;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 0 12px;
+  font-family: "Karla", sans-serif;
+  vertical-align: baseline;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 10px;
+  text-wrap: wrap;
+}
+/*  */
+.pill-container span {
+  margin: 3px !important;
+}
+#document-picker{
+  cursor: pointer;
+}
+#file{
+  display: none;
+}

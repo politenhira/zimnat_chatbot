@@ -1,0 +1,6 @@
+content/vectors/
+venv
+uploads/vectors
+.env
+.idea
+./.idea

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Suki - Zimnat Bot</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="chat-box">
+      <header>
+        <h1>Suki</h1>
+        <small id="indicator">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;Online</small>
+        <span style="flex: 1"></span>
+        <span id="document-picker" style="flex: 0.3">📄</span>
+        <input type="file" name="file" id="file" accept="application/pdf" />
+        <span class="close-button">X</span>
+      </header>
+      <section id="message-list"></section>
+      <footer>
+        <input id="message-input" type="text" placeholder="Type a message..." />
+      </footer>
+    </div>
+    <small class="dev-label">Chat powered by Polite Nhira 2024</small>
+    <!-- partial -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
